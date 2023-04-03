@@ -1,10 +1,9 @@
-import GreetingForm from './component/GreetingForm';
-import './index.css';
+import GreetingForm from "./component/GreetingForm";
+import "./index.css";
 
 function App() {
   return (
-
-     <div className='flex flex-col items-center justify-center h-screen'>
+    <div className="flex flex-col items-center justify-center h-screen">
       <GreetingForm />
     </div>
   );
