@@ -4,8 +4,9 @@ function GreetingForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
 
-  const handleSubmit = () => {
-    alert(`Hello ${firstName} ${lastName}!`);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`Hello ${firstName.trim() || 'John'} ${lastName.trim() || 'Doe'}`);
   };
   
   return (
